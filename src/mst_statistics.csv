@@ -1,0 +1,6 @@
+"Question","Total_Weight","Avg_Weight","Min_Weight","Max_Weight","Std_Dev","Coefficient_of_Variation"
+"Variety",32,1.33,0,3,0.87,0.65
+"Spending",450,18.75,0,50,15.24,0.81
+"Frequency",108.5,4.52,0,9.5,2.89,0.64
+"Quality",28,1.17,0,3,0.83,0.71
+"Health",30,1.25,0,3,0.85,0.68
