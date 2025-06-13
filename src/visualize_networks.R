@@ -40,12 +40,12 @@ create_network_plot <- function(adj_matrix_file, title, output_filename) {
 }
 
 create_network_plot("/Users/user/Desktop/discrete_structure_assignment/csv_data/q3.csv", 
-                   "Network of Variety Satisfaction Differences", "q3_network")
+                   "Network of Weekly Meals Differences", "q3_network")
 create_network_plot("/Users/user/Desktop/discrete_structure_assignment/csv_data/q5.csv", 
-                   "Network of Weekly Spending Differences", "q5_network")
+                   "Network of Food Healthiness", "q5_network")
 create_network_plot("/Users/user/Desktop/discrete_structure_assignment/csv_data/q4.csv", 
-                   "Network of Weekly Meals Differences", "q4_network")
+                   "Network of Food Quality Differences", "q4_network")
 create_network_plot("/Users/user/Desktop/discrete_structure_assignment/csv_data/q2.csv", 
-                   "Network of Food Quality Differences", "q2_network")
+                   "Network of Weekly Spending Differences", "q2_network")
 create_network_plot("/Users/user/Desktop/discrete_structure_assignment/csv_data/q1.csv", 
-                   "Network of Food Healthiness Differences", "q1_network")
+                   "Network of Variety Satisfaction Differences", "q1_network")

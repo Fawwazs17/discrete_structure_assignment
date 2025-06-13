@@ -58,19 +58,19 @@ public class SurveyGraphAnalyzer {
         }
 
 
-        generateAdjacencyMatrix(respondents, "csv_data/q3.csv", 
+        generateAdjacencyMatrix(respondents, "csv_data/q1.csv", 
             (r1, r2) -> Math.abs(r1.varietySatisfaction - r2.varietySatisfaction));
         
-        generateAdjacencyMatrix(respondents, "csv_data/q5.csv", 
+        generateAdjacencyMatrix(respondents, "csv_data/q2.csv", 
             (r1, r2) -> Math.abs(r1.weeklySpending - r2.weeklySpending));
         
-        generateAdjacencyMatrix(respondents, "csv_data/q4.csv", 
+        generateAdjacencyMatrix(respondents, "csv_data/q3.csv", 
             (r1, r2) -> Math.abs(r1.weeklyMeals - r2.weeklyMeals));
         
-        generateAdjacencyMatrix(respondents, "csv_data/q2.csv", 
+        generateAdjacencyMatrix(respondents, "csv_data/q4.csv", 
             (r1, r2) -> Math.abs(r1.foodQuality - r2.foodQuality));
         
-        generateAdjacencyMatrix(respondents, "csv_data/q1.csv", 
+        generateAdjacencyMatrix(respondents, "csv_data/q5.csv", 
             (r1, r2) -> Math.abs(r1.foodHealthiness - r2.foodHealthiness));
     }
 
@@ -78,14 +78,12 @@ public class SurveyGraphAnalyzer {
                                               String outputFile,
                                               java.util.function.BiFunction<Respondent, Respondent, Integer> differenceCalculator) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile))) {
-            // Write header with respondent IDs
             writer.print("respondent");
             for (Respondent r : respondents) {
                 writer.print("," + r.respondentId);
             }
             writer.println();
 
-            // Write matrix rows
             for (Respondent r1 : respondents) {
                 writer.print(r1.respondentId);
                 for (Respondent r2 : respondents) {
