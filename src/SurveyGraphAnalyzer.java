@@ -57,7 +57,7 @@ public class SurveyGraphAnalyzer {
             return;
         }
 
-        // Generate adjacency matrices for each question
+
         generateAdjacencyMatrix(respondents, "csv_data/q3.csv", 
             (r1, r2) -> Math.abs(r1.varietySatisfaction - r2.varietySatisfaction));
         
