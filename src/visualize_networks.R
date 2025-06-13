@@ -1,4 +1,3 @@
-# Install required packages if not already installed
 if (!require("igraph")) install.packages("igraph")
 if (!require("ggplot2")) install.packages("ggplot2")
 if (!require("readr")) install.packages("readr")
